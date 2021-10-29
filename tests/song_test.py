@@ -2,7 +2,7 @@ import unittest
 from classes.songs import Song
 from classes.rooms import Room
 
-class TestGuest(unittest.TestCase):
+class TestSong(unittest.TestCase):
 
     def setUp(self):
         self.song1 = Song("White Noise", "Disclosure, Aluna George")
