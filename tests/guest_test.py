@@ -31,3 +31,16 @@ class TestGuest(unittest.TestCase):
     
     def test_guest_has_cash3(self):
         self.assertEqual(75, self.guest3.wallet)
+    
+    def test_guest_has_favourite_song(self):
+        self.assertEqual("White Noise", self.guest1.favourite_song)
+
+    def test_guest_has_favourite_song2(self):
+        self.assertEqual("Ticket To Ride", self.guest2.favourite_song)
+
+    def test_guest_has_favourite_song3(self):
+        self.assertEqual("American Boy", self.guest3.favourite_song)
+
+
+     
+
