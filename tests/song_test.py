@@ -1,6 +1,5 @@
 import unittest
 from classes.songs import Song
-from classes.rooms import Room
 
 class TestSong(unittest.TestCase):
 
@@ -10,3 +9,5 @@ class TestSong(unittest.TestCase):
         self.song3 = Song("Durag Activity", "Baby Keem, Travis Scott")
         
 
+    def test_song_has_song_name(self):
+        self.assertEqual("White Noise", self.song1.song_name)
