@@ -36,4 +36,3 @@ class TestRoom(unittest.TestCase):
         
     def test_room_has_room_capacity3(self):
         self.assertEqual(20, self.room3.room_capacity)
-        
