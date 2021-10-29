@@ -17,3 +17,7 @@ class TestSong(unittest.TestCase):
     
     def test_song_has_song_name3(self):
         self.assertEqual("Durag Activity", self.song3.song_name)
+
+    def test_song_has_artist_name(self):
+        self.assertEqual("Disclosure, Aluna George", self.song1.artist_name)
+        
