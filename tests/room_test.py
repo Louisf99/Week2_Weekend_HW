@@ -60,6 +60,12 @@ class TestRoom(unittest.TestCase):
         self.room3.check_in_to_room(self.guest3)
         self.assertEqual(1, len(self.room3.guest_in_room))
 
+    def test_check_out_works(self):
+        self.room1.check_in_to_room(self.guest1)
+        self.room1.check_in_to_room(self.guest2)
+        self.room1.check_out_of_room(self.guest2)
+        self.assertEqual(1, len(self.room1.guest_in_room))
+
     def test_add_song_to_room_works(self):
         self.room1.add_song(self.song1)
         self.assertEqual(1, len(self.room1.playlist))
@@ -69,7 +75,7 @@ class TestRoom(unittest.TestCase):
         self.room1.add_song(self.song2)
         self.room1.remove_song(self.song1)
         self.assertEqual(1, len(self.room1.playlist))
-        
+
 
 
     
