@@ -7,6 +7,7 @@ class Room:
 
     def check_in_to_room(self, guest):
         self.guest_in_room.append(guest)
+        
     # def check_in_to_room(self, guest):
     #     if len(self.guest_in_room) < self.room_capacity:
     #         self.guest_in_room.append(guest)
