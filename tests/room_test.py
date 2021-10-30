@@ -60,9 +60,7 @@ class TestRoom(unittest.TestCase):
         self.room3.check_in_to_room(self.guest3)
         self.assertEqual(1, len(self.room3.guest_in_room))
 
-    def test_check_in_does_not_work_if_at_capacity(self):
-        self.assertEqual
-
+    
     
 
 
