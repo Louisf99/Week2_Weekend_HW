@@ -6,7 +6,7 @@ from classes.songs import Song
 class TestRoom(unittest.TestCase):
 
     def setUp(self):
-        self.room1 = Room("LED Room",10 )
+        self.room1 = Room("LED Room",10)
         self.room2 = Room("Pop Room", 12)
         self.room3 = Room("VIP Room", 4)
 

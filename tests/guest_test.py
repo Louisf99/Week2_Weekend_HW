@@ -61,10 +61,9 @@ class TestGuest(unittest.TestCase):
     def test_guest_has_favourite_song5(self):
         self.assertEqual("Watermelon Sugar", self.guest5.favourite_song)
 
-    # def test_guest_cheers_fav_song(self):
-    #     self.playlist = [self.song1, self.song2, self.song3]
-    #     self.assertEqual("whoop whoop", self.guest1.cheer_fav_song(self.playlist))
-
+    # def test_guest_does_not_cheer(self):
+    #     playlist = [self.song2, self.song3]
+    #     self.assertEqual(None, self.guest1.favourite_song(playlist))
 
 
      
